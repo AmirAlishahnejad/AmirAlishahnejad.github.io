@@ -85,12 +85,12 @@
     }
 
     .hero {
-      min-height: 590px;
+      min-height: 560px;
       display: grid;
-      grid-template-columns: 1.25fr 0.75fr;
+      grid-template-columns: 1.15fr 0.65fr;
       align-items: center;
-      gap: 80px;
-      padding-block: 90px;
+      gap: 88px;
+      padding-block: 80px;
     }
 
     .eyebrow {
@@ -103,20 +103,20 @@
     }
 
     h1 {
-      max-width: 800px;
+      max-width: 700px;
       margin: 0;
-      font-size: clamp(3rem, 7vw, 5.6rem);
+      font-size: clamp(2.6rem, 5vw, 4.2rem);
       font-weight: 620;
-      letter-spacing: -0.055em;
-      line-height: 0.98;
-    }
+      letter-spacing: -0.045em;
+      line-height: 1.02;
+       }
 
     .hero-description {
-      max-width: 690px;
-      margin: 34px 0 0;
+      max-width: 650px;
+      margin: 30px 0 0;
       color: var(--text-secondary);
-      font-size: clamp(1.1rem, 2vw, 1.35rem);
-      line-height: 1.6;
+      font-size: clamp(1.05rem, 1.6vw, 1.22rem);
+      line-height: 1.7;
     }
 
     .hero-meta {
@@ -139,20 +139,6 @@
 
     .primary-link:hover {
       color: var(--accent-dark);
-    }
-
-    .visual {
-      min-height: 370px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border: 1px solid var(--border);
-      background: var(--surface);
-    }
-
-    .visual svg {
-      width: 84%;
-      height: auto;
     }
 
     .section {
@@ -309,6 +295,42 @@
       gap: 24px;
     }
 
+    .hero-education {
+      display: grid;
+      gap: 10px;
+      margin-top: 28px;
+    }
+    
+    .hero-education p {
+      margin: 0;
+      font-size: 0.92rem;
+    }
+    
+    .hero-education strong {
+      font-weight: 600;
+    }
+    
+    .hero-education span {
+      margin-left: 8px;
+      color: var(--text-secondary);
+    }
+    
+    .portrait {
+      margin: 0;
+      width: 100%;
+    }
+    
+    .portrait img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      filter: saturate(0.88);
+    }
+    
     @media (max-width: 800px) {
       .nav-links {
         display: none;
@@ -323,10 +345,6 @@
       .hero {
         gap: 50px;
         padding-block: 70px;
-      }
-
-      .visual {
-        min-height: 280px;
       }
 
       .section {
@@ -381,40 +399,56 @@
   <main id="top">
 
     <section class="container hero">
-      <div>
-        <p class="eyebrow">
-          Robotics · Learning · Control
-        </p>
-
-        <h1>
-          Building intelligent systems that move.
-        </h1>
-
-        <p class="hero-description">
-          I am a mechanical engineer and robotics researcher exploring how
-          reinforcement learning, control, and physical design come together
-          in autonomous mobile robots.
-        </p>
-
-        <p class="hero-meta">
-          M.Sc. student at Iran University of Science and Technology ·
-          IDAS Lab
-        </p>
-
-        <div class="hero-links">
-          <a class="primary-link" href="#research">
-            Selected research →
-          </a>
-
-          <a href="https://github.com/AmirAlishahnejad">
-            GitHub ↗
-          </a>
-
-          <a href="https://www.linkedin.com/in/amir-alishahnejad">
-            LinkedIn ↗
-          </a>
+        <div class="hero-content">
+          <p class="eyebrow">
+            Mechanical Engineering · Robotics · Intelligent Control
+          </p>
+      
+          <h1>
+            AmirHossein<br>
+            Alishahnejad
+          </h1>
+      
+          <p class="hero-description">
+            I am a mechanical engineer and robotics researcher working on
+            reinforcement learning and intelligent control for autonomous
+            mobile robot navigation.
+          </p>
+      
+          <div class="hero-education">
+            <p>
+              <strong>M.Sc. Student</strong>
+              <span>Iran University of Science and Technology</span>
+            </p>
+      
+            <p>
+              <strong>B.Eng. in Mechanical Engineering</strong>
+              <span>Shahid Beheshti University</span>
+            </p>
+          </div>
+      
+          <div class="hero-links">
+            <a class="primary-link" href="#research">
+              Selected research →
+            </a>
+      
+            <a href="https://github.com/AmirAlishahnejad">
+              GitHub ↗
+            </a>
+      
+            <a href="https://www.linkedin.com/in/amir-alishahnejad">
+              LinkedIn ↗
+            </a>
+          </div>
         </div>
-      </div>
+      
+        <figure class="portrait">
+          <img
+            src="assets/amirhossein.jpg"
+            alt="Portrait of AmirHossein Alishahnejad"
+          >
+        </figure>
+      </section>
 
       <div class="visual" aria-label="Abstract robot navigation diagram">
         <svg viewBox="0 0 420 340" role="img">
