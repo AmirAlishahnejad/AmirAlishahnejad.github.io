@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AmirHossein Alishahnejad | Robotics Researcher</title>
+
+  <meta
+    name="description"
+    content="AmirHossein Alishahnejad — Mechanical engineer and robotics researcher working on reinforcement learning, intelligent control, and autonomous mobile robot navigation."
+  >
+
+  <style>
+    :root {
+      --background: #f5f6f6;
+      --surface: #fcfdfd;
+      --text-primary: #20272a;
+      --text-secondary: #657178;
+      --accent: #486f82;
+      --accent-dark: #355767;
+      --border: #d7dee1;
+      --content-width: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text-primary);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent);
+    }
+
+    .container {
+      width: min(calc(100% - 40px), var(--content-width));
+      margin-inline: auto;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navigation {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+
+    .site-name {
+      font-weight: 650;
+      letter-spacing: -0.02em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--text-secondary);
+      font-size: 0.94rem;
+    }
+
+    .hero {
+      min-height: 590px;
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      align-items: center;
+      gap: 80px;
+      padding-block: 90px;
+    }
+
+    .eyebrow {
+      margin: 0 0 20px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 650;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 800px;
+      margin: 0;
+      font-size: clamp(3rem, 7vw, 5.6rem);
+      font-weight: 620;
+      letter-spacing: -0.055em;
+      line-height: 0.98;
+    }
+
+    .hero-description {
+      max-width: 690px;
+      margin: 34px 0 0;
+      color: var(--text-secondary);
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      line-height: 1.6;
+    }
+
+    .hero-meta {
+      margin-top: 26px;
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+
+    .hero-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      margin-top: 36px;
+    }
+
+    .primary-link {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .primary-link:hover {
+      color: var(--accent-dark);
+    }
+
+    .visual {
+      min-height: 370px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .visual svg {
+      width: 84%;
+      height: auto;
+    }
+
+    .section {
+      padding-block: 105px;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-heading {
+      display: grid;
+      grid-template-columns: 0.35fr 1fr;
+      gap: 60px;
+      margin-bottom: 58px;
+    }
+
+    .section-number {
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.8rem;
+    }
+
+    h2 {
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      font-weight: 590;
+      letter-spacing: -0.04em;
+      line-height: 1.12;
+    }
+
+    .feature {
+      display: grid;
+      grid-template-columns: 0.72fr 1fr;
+      gap: 70px;
+      align-items: start;
+    }
+
+    .feature-meta {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .feature-content h3 {
+      margin: 0 0 22px;
+      font-size: 1.55rem;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+    }
+
+    .feature-content p {
+      max-width: 700px;
+      margin: 0 0 24px;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    .project-list {
+      border-top: 1px solid var(--border);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 0.32fr 1fr 0.12fr;
+      gap: 40px;
+      padding-block: 34px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .project-year {
+      color: var(--text-secondary);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 0.85rem;
+    }
+
+    .project h3 {
+      margin: 0 0 8px;
+      font-size: 1.18rem;
+      font-weight: 600;
+    }
+
+    .project p {
+      max-width: 680px;
+      margin: 0;
+      color: var(--text-secondary);
+    }
+
+    .project-arrow {
+      color: var(--accent);
+      text-align: right;
+    }
+
+    .publication {
+      max-width: 850px;
+    }
+
+    .publication-title {
+      margin: 0 0 14px;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+
+    .publication-details {
+      margin: 0;
+      color: var(--text-secondary);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.65fr;
+      gap: 90px;
+    }
+
+    .about-copy {
+      max-width: 720px;
+      color: var(--text-secondary);
+      font-size: 1.08rem;
+    }
+
+    .about-copy p {
+      margin-top: 0;
+    }
+
+    .academic-snapshot {
+      padding-left: 34px;
+      border-left: 1px solid var(--border);
+    }
+
+    .academic-snapshot p {
+      margin: 0 0 24px;
+    }
+
+    .academic-snapshot span {
+      display: block;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding-block: 48px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+    }
+
+    @media (max-width: 800px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero,
+      .feature,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        gap: 50px;
+        padding-block: 70px;
+      }
+
+      .visual {
+        min-height: 280px;
+      }
+
+      .section {
+        padding-block: 75px;
+      }
+
+      .section-heading {
+        grid-template-columns: 1fr;
+        gap: 14px;
+      }
+
+      .project {
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+
+      .project-arrow {
+        text-align: left;
+      }
+
+      .academic-snapshot {
+        padding: 30px 0 0;
+        border-top: 1px solid var(--border);
+        border-left: 0;
+      }
+
+      .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <nav class="container navigation">
+      <a class="site-name" href="#top">
+        AmirHossein Alishahnejad
+      </a>
+
+      <div class="nav-links">
+        <a href="#research">Research</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#publications">Publications</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="container hero">
+      <div>
+        <p class="eyebrow">
+          Robotics · Learning · Control
+        </p>
+
+        <h1>
+          Building intelligent systems that move.
+        </h1>
+
+        <p class="hero-description">
+          I am a mechanical engineer and robotics researcher exploring how
+          reinforcement learning, control, and physical design come together
+          in autonomous mobile robots.
+        </p>
+
+        <p class="hero-meta">
+          M.Sc. student at Iran University of Science and Technology ·
+          IDAS Lab
+        </p>
+
+        <div class="hero-links">
+          <a class="primary-link" href="#research">
+            Selected research →
+          </a>
+
+          <a href="https://github.com/AmirAlishahnejad">
+            GitHub ↗
+          </a>
+
+          <a href="https://www.linkedin.com/in/amir-alishahnejad">
+            LinkedIn ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="visual" aria-label="Abstract robot navigation diagram">
+        <svg viewBox="0 0 420 340" role="img">
+          <rect
+            x="42"
+            y="50"
+            width="80"
+            height="60"
+            rx="4"
+            fill="#d7dee1"
+          />
+
+          <rect
+            x="278"
+            y="208"
+            width="90"
+            height="70"
+            rx="4"
+            fill="#d7dee1"
+          />
+
+          <rect
+            x="174"
+            y="115"
+            width="68"
+            height="95"
+            rx="4"
+            fill="#e6ebed"
+          />
+
+          <path
+            d="M62 278 C116 240 128 202 168 219 C218 240 231 76 301 85 C348 91 363 133 365 164"
+            fill="none"
+            stroke="#486f82"
+            stroke-width="5"
+            stroke-linecap="round"
+            stroke-dasharray="10 11"
+          />
+
+          <circle cx="62" cy="278" r="10" fill="#486f82"/>
+          <circle cx="365" cy="164" r="10" fill="#20272a"/>
+
+          <g transform="translate(129 202)">
+            <rect
+              x="0"
+              y="0"
+              width="42"
+              height="30"
+              rx="5"
+              fill="#20272a"
+            />
+            <circle cx="8" cy="33" r="6" fill="#657178"/>
+            <circle cx="34" cy="33" r="6" fill="#657178"/>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">01 / Research</span>
+
+          <h2>
+            Learning-based navigation for autonomous mobile robots.
+          </h2>
+        </div>
+
+        <div class="feature">
+          <p class="feature-meta">
+            Current M.Sc. research<br>
+            Reinforcement Learning<br>
+            ROS · Gazebo
+          </p>
+
+          <div class="feature-content">
+            <h3>
+              Modular Reinforcement Learning for Robot Navigation
+            </h3>
+
+            <p>
+              My current research investigates reinforcement learning methods
+              for autonomous mobile robot navigation, with a focus on modular
+              decision-making and the coordination of goal-directed and
+              obstacle-avoidance behaviours.
+            </p>
+
+            <a class="primary-link" href="#">
+              Research details — coming later
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="engineering">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">02 / Engineering</span>
+
+          <h2>
+            From mechanical design to autonomous behaviour.
+          </h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project">
+            <div class="project-year">2023—2024</div>
+
+            <div>
+              <h3>
+                Two-Wheeled Differential-Drive Robot Platform
+              </h3>
+
+              <p>
+                Mechanical design, CAD assembly, fabrication and development
+                of a physical mobile-robot platform for service robotics.
+              </p>
+            </div>
+
+            <div class="project-arrow">→</div>
+          </article>
+
+          <article class="project">
+            <div class="project-year">2025</div>
+
+            <div>
+              <h3>
+                Autonomous Agricultural Robotic System
+              </h3>
+
+              <p>
+                Research and development of intelligent control methods for
+                an autonomous agricultural robotic platform.
+              </p>
+            </div>
+
+            <div class="project-arrow">→</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">03 / Publications</span>
+
+          <h2>
+            Selected academic work.
+          </h2>
+        </div>
+
+        <article class="publication">
+          <p class="publication-title">
+            Design and Fabrication of a Two-Wheeled Differential-Drive
+            Platform for Service Robots
+          </p>
+
+          <p class="publication-details">
+            AmirHossein Alishahnejad, Sara Emami and MohammadReza Haghjoo
+            <br>
+            Iranian Society of Mechanical Engineers Conference
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">04 / About</span>
+
+          <h2>
+            Mechanical foundations, intelligent autonomy.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-copy">
+            <p>
+              My background spans mechanical design, robot fabrication,
+              control systems and learning-based autonomy. I am interested in
+              developing robotic systems by considering their physical
+              platform, control architecture and decision-making algorithms
+              together.
+            </p>
+
+            <p>
+              Outside research, I enjoy hiking, spending time in nature and
+              reading philosophy.
+            </p>
+          </div>
+
+          <aside class="academic-snapshot">
+            <p>
+              M.Sc. Mechanical Engineering
+              <span>Iran University of Science and Technology</span>
+            </p>
+
+            <p>
+              Research Assistant
+              <span>IDAS Laboratory</span>
+            </p>
+
+            <p>
+              Research interests
+              <span>Robot navigation · Reinforcement learning · Control</span>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <div>
+        © 2026 AmirHossein Alishahnejad
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:hosseinalishahnezhad@gmail.com">Email</a>
+        <a href="https://github.com/AmirAlishahnejad">GitHub</a>
+        <a href="https://www.linkedin.com/in/amir-alishahnejad">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
